@@ -1,9 +1,11 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
-        // MOUSUI 为输出的文件名
-        MOUSUI: './lib/index.tsx'
+        // index 为输出的文件名
+        index: './lib/index.tsx'
+    },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
     },
     output: {
         path: path.resolve(__dirname, 'dist/lib'),
@@ -18,11 +20,5 @@ module.exports = {
                 loader: 'awesome-typescript-loader'
             }
         ]
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Mous-UI',
-            template: 'index.html'
-        })
-    ]
+    }
 }

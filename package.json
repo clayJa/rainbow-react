@@ -2,9 +2,12 @@
   "name": "mous-react",
   "version": "1.0.0",
   "description": "a simple react UI component",
-  "main": "index.js",
+  "main": "dist/lib/index",
+  "types": "dist/lib/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.js --runInBand",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +21,26 @@
   },
   "homepage": "https://github.com/clayJa/mous-react#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-test-renderer": "^16.8.1",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^24.7.1",
+    "cross-env": "^5.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.7.1",
+    "react-test-renderer": "^16.8.6",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.4.3",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
