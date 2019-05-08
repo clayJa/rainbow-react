@@ -1,13 +1,13 @@
 import React from 'react';
-import '../icons/wechat.svg';
-interface IconProps {
+import './importIcons';
+import  './icon.scss';
+import  classes  from '../helpers/helper';
+interface IconProps extends React.SVGAttributes<SVGElement>{
     name: string;
 }
-const Icon: React.FunctionComponent<IconProps> = (props) => {
+const Icon: React.FunctionComponent<IconProps> = ({name,className,...restProps}) => {
     return (
-        <span>
-            <svg><use xlinkHref={`#${props.name}`}/></svg>
-        </span>
+        <svg className={classes('mous-icon',className)} {...restProps}><use xlinkHref={`#${name}`}/></svg>
     );
 }
 
