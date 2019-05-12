@@ -1,2 +1,2 @@
-# mous-react
+# mous-react &middot; [![GitHub license](https://img.shields.io/github/license/clayJa/mous-react.svg)](https://github.com/clayJa/mous-react/blob/master/LICENSE) [![CircleCI](https://img.shields.io/circleci/project/github/clayJa/mous-react.svg)](https://circleci.com/gh/clayJa/mous-react)  [![npm version](https://badge.fury.io/js/mous-react.svg)](https://www.npmjs.com/package/mous-react)
 a simple react UI component
