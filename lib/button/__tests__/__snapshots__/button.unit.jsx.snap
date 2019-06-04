@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button render successfully 1`] = `
+<button
+  className="mous-button-normal mous-button"
+>
+  
+</button>
+`;
