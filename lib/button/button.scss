@@ -1,4 +1,4 @@
-$default-color: rgba(126, 87, 194, 1);
+@import "../helpers/helper";
 @keyframes loading {
   0% {
     transform: rotate(0deg);
@@ -18,7 +18,7 @@ $default-color: rgba(126, 87, 194, 1);
   white-space: nowrap;
   text-align: center;
   background-image: none;
-  border: 1px solid $default-color;
+  border: 1px solid $main-color;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
   cursor: pointer;
   transition: all .3s cubic-bezier(.645, .045, .355, 1);
@@ -28,7 +28,7 @@ $default-color: rgba(126, 87, 194, 1);
   padding: 0 15px;
   font-size: 14px;
   border-radius: 4px;
-  color: $default-color;
+  color: $main-color;
   background-color: #fff;
 
   &:focus {
@@ -37,15 +37,15 @@ $default-color: rgba(126, 87, 194, 1);
   }
 
   &:hover {
-    background-color: transparentize($default-color, 0.7);
+    background-color: transparentize($main-color, 0.7);
   }
 
   &.mous-button-primary {
     color: white;
-    background-color: $default-color;
+    background-color: $main-color;
 
     &:hover {
-      background-color: transparentize($default-color, 0.1);
+      background-color: transparentize($main-color, 0.1);
     }
   }
 
