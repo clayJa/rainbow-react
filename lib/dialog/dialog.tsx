@@ -1,8 +1,9 @@
-import React, {Fragment, ReactElement} from 'react';
+import React, {Fragment, ReactElement, ReactNode} from 'react';
 import ReactDOM from 'react-dom';
 import {Icon} from '../index';
 import './dialog.scss';
 import {scopedClassMaker} from '../helpers/helper';
+import Button from '../button/button';
 
 interface DialogProps extends React.HTMLAttributes<HTMLElement> {
   visible: boolean,
@@ -12,7 +13,7 @@ interface DialogProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 const scopedClass = scopedClassMaker('mous-dialog');
-const Dialog: React.FunctionComponent<DialogProps> = ({visible, children, onClose, buttons,closeOnClickMask}) => {
+const Dialog: React.FunctionComponent<DialogProps> = ({visible, children, onClose, buttons, closeOnClickMask}) => {
   const onClickClose: React.MouseEventHandler = (e) => {
     onClose(e);
   };
@@ -31,9 +32,9 @@ const Dialog: React.FunctionComponent<DialogProps> = ({visible, children, onClos
         <div className={scopedClass('header')}>
           提示
         </div>
-        <main className={scopedClass('content')}>
+        <div className={scopedClass('main')}>
           {children}
-        </main>
+        </div>
         {buttons && buttons.length > 0 &&
         <div className={scopedClass('footer')}>
           {buttons && buttons.map((button, index) =>
@@ -49,7 +50,49 @@ const Dialog: React.FunctionComponent<DialogProps> = ({visible, children, onClos
 };
 
 Dialog.defaultProps = {
-  closeOnClickMask: true
+  closeOnClickMask: false
 };
 
+const modal = (content: ReactNode, buttons?: Array<ReactElement>, afterClose?: () => void) => {
+  const close = () => {
+    ReactDOM.render(React.cloneElement(component, {visible: false}), div);
+    ReactDOM.unmountComponentAtNode(div);
+    div.remove();
+  };
+  const component =
+    <Dialog
+      visible={true}
+      buttons={buttons}
+      onClose={() => {
+        close();
+        afterClose && afterClose();
+      }}>
+      {content}
+    </Dialog>;
+  const div = document.createElement('div');
+  document.body.append(div);
+  ReactDOM.render(component, div);
+  return close;
+};
+const alert = (content: string) => {
+  const button = <Button onClick={() => close()} mode="primary" autoFocus>确定</Button>;
+  const close = modal(content, [button]);
+};
+const confirm = (content: string, ok?: () => void, cancel?: () => void, autoFocusButton?: string) => {
+  const onOk = () => {
+    close();
+    ok && ok();
+  };
+  const onCancel = () => {
+    close();
+    cancel && cancel();
+  };
+  const buttons = [
+    <Button onClick={onCancel} style={{marginRight: '8px'}} autoFocus={autoFocusButton === 'cancel'}>取消</Button>,
+    <Button onClick={onOk} mode="primary"
+            autoFocus={autoFocusButton === undefined || autoFocusButton === 'ok'}>确定</Button>
+  ];
+  const close = modal(content, buttons, cancel);
+};
+export {alert, confirm, modal};
 export default Dialog;
