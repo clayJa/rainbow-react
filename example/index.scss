@@ -1,4 +1,4 @@
-* {margin: 0;padding: 0; box-sizing: border-box;}
+* {margin: 0;padding: 0; box-sizing: border-box;color: #212121}
 *::before {box-sizing: border-box;}
 *::after {box-sizing: border-box;}
 ul, ol {list-style: none;}
@@ -8,7 +8,7 @@ pre {
   font-family: "Fira Code Medium", Consolas, monospace;
 }
 $padding: 16px;
-$main-color: #00ADB5;
+$main-color: #7e57c2;
 $border-color: #eee;
 body {
   font-size: 16px;
@@ -21,7 +21,7 @@ body {
   padding-top: 16px;
 }
 .site-header {
-  background: $border-color;
+  background: rgb(48, 63, 159);
   padding: 8px 0;
   .logo {
     padding: 0 $padding;
@@ -29,31 +29,28 @@ body {
     align-items: center;
     > img {margin-right: 8px;}
     > span {
-      color: $main-color;
+      color: #fff;
       font-size: 32px;
     }
   }
 }
 .site-aside {
-  border-right: 1px solid #EEEEEE;
-  margin-right: 16px;
+  margin-right: 40px;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
   h2 {
     padding: $padding;
     font-size: 18px;
   }
   ul {
-    min-width: 12em;
+    min-width: 16em;
+    padding-top: 10px;
     > li {
       a {
         color: #333;
         display: block;
-        padding: 8px $padding;
-        &:hover {
-          color: $main-color;
-        }
-        &.active {
-          color: white;
-          background: $main-color;
+        padding: 14px 28px;
+        &.active,&:hover {
+          background:  rgb(238, 238, 238);
         }
       }
     }

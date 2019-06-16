@@ -12,6 +12,12 @@
     flex-direction: row;
     .mous-layout {
       flex-direction: column;
+      &-header, &-footer{
+        width: 100%;
+      }
+      &-hasAside {
+        flex-direction: row;
+      }
     }
   }
 }
