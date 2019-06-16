@@ -12,7 +12,7 @@ module.exports = Object.assign({}, base, {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Mous-UI',
-      template: 'index.html',
+      template: './example/index.html'
     })
   ],
 })

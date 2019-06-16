@@ -42,7 +42,7 @@ ReactDOM.render(
         </Content>
       </Layout>
       <Footer className="site-footer">
-        &copy; 方应杭
+        &copy; clayJa
       </Footer>
     </Layout>
   </Router>

@@ -65,4 +65,5 @@ typings/
 .DS_Store
 # build
 /dist/*
+/doc/*
 /test-results/
