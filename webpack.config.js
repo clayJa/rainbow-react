@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist/lib'),
-    library: 'Mous',
+    library: 'rainbow',
     //  配置库格式-umd
     libraryTarget: 'umd',
   },

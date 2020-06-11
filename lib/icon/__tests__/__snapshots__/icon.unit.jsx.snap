@@ -2,7 +2,7 @@
 
 exports[`icon render successfully 1`] = `
 <svg
-  className="mous-icon"
+  className="rainbow-icon"
 >
   <use
     xlinkHref="#wechat"

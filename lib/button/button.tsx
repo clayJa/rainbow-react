@@ -10,7 +10,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: React.FunctionComponent<ButtonProps> = ({loading, mode, className,children, ...restProps}) => {
   return (
-    <button className={classes(`mous-button-${mode || 'normal'}`,'mous-button', className)} {...restProps}>
+    <button className={classes(`rainbow-button-${mode || 'normal'}`,'rainbow-button', className)} {...restProps}>
       { loading ?
         <Icon
           name="loading"

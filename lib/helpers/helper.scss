@@ -1,7 +1,7 @@
 $main-color: rgba(126, 87, 194, 1);
 $text-color: fade_out(#000,0.15);
 $border-color: fade_out(#000,0.9);
-[class^=mous-] {
+[class^=rainbow-] {
   box-sizing: border-box;
   &::after,
   &::before {

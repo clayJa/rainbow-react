@@ -7,7 +7,8 @@ module.exports = Object.assign({}, base, {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Mous-UI',
+            title: 'Rainbow-UI',
+            favicon: './example/favicon.ico',
             template: './example/index.html'
         })
     ],

@@ -3,7 +3,7 @@ import './layout.scss';
 import Aside from './aside';
 import {scopedClassMaker} from '../helpers/helper';
 
-const sc = scopedClassMaker('mous-layout');
+const sc = scopedClassMaker('rainbow-layout');
 
 interface Props extends React.HTMLAttributes<HTMLElement> {
   children: ReactElement | Array<ReactElement>

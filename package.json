@@ -1,5 +1,5 @@
 {
-  "name": "mous-react",
+  "name": "rainbow-react",
   "version": "0.0.2",
   "description": "a simple react UI component",
   "main": "dist/lib/index",
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clayJa/mous-react.git"
+    "url": "git+https://github.com/clayJa/rainbow-react.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/clayJa/mous-react/issues"
+    "url": "https://github.com/clayJa/rainbow-react/issues"
   },
-  "homepage": "https://github.com/clayJa/mous-react#readme",
+  "homepage": "https://github.com/clayJa/rainbow-react#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",

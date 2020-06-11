@@ -1,4 +1,4 @@
-.mous-layout {
+.rainbow-layout {
   display: flex;
   flex-direction: column;
   &-content {
@@ -10,7 +10,7 @@
   }
   &-hasAside  {
     flex-direction: row;
-    .mous-layout {
+    .rainbow-layout {
       flex-direction: column;
       &-header, &-footer{
         width: 100%;

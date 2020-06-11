@@ -2,8 +2,8 @@
 
 exports[`button render successfully 1`] = `
 <button
-  className="mous-button-normal mous-button"
+  className="rainbow-button-normal rainbow-button"
 >
-  
+
 </button>
 `;

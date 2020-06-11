@@ -8,8 +8,14 @@ pre {
   font-family: "Fira Code Medium", Consolas, monospace;
 }
 $padding: 16px;
-$main-color: #7e57c2;
+$box-shadow: 0 2px 8px #f0f1f2;
+$main-color: #bd8cff;
 $border-color: #eee;
+$rainbow-1: #ffb78c;
+$rainbow-2: #fff08c;
+$rainbow-3: #bbff8c;
+$rainbow-4: #8cffce;
+$rainbow-5: #bd8cff;
 body {
   font-size: 16px;
 }
@@ -21,7 +27,7 @@ body {
   padding-top: 16px;
 }
 .site-header {
-  background: rgb(48, 63, 159);
+  box-shadow: $box-shadow;
   padding: 8px 0;
   .logo {
     padding: 0 $padding;
@@ -31,12 +37,15 @@ body {
     > span {
       color: #fff;
       font-size: 32px;
+      background: linear-gradient(90deg, $rainbow-1 0%,$rainbow-2 40%,$rainbow-3 60%, $rainbow-4 80%,$rainbow-5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
 .site-aside {
   margin-right: 40px;
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+  box-shadow: $box-shadow;
   h2 {
     padding: $padding;
     font-size: 18px;
@@ -50,8 +59,14 @@ body {
         display: block;
         padding: 14px 28px;
         &.active,&:hover {
-          background:  rgb(238, 238, 238);
+          color: #fff;
         }
+      }
+      &:nth-child(2n +  1) a.active,&:nth-child(2n +  1) a:hover {
+        background: $rainbow-1;
+      }
+      &:nth-child(2n) a.active,&:nth-child(2n) a:hover {
+        background: $rainbow-5;
       }
     }
   }

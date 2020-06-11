@@ -4,7 +4,7 @@ import {scopedClassMaker} from '../helpers/helper';
 interface Props extends React.HTMLAttributes<HTMLElement> {
 }
 
-const sc = scopedClassMaker('mous-layout');
+const sc = scopedClassMaker('rainbow-layout');
 const Content: React.FunctionComponent<Props> = (props) => {
   const {className, ...rest} = props;
   return (

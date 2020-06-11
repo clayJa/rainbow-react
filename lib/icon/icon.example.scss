@@ -1,0 +1,46 @@
+$main-color: #bd8cff;
+$secondary-color: #ffb78c;
+$rainbow-1: #ffb78c;
+$rainbow-2: #fff08c;
+$rainbow-3: #bbff8c;
+$rainbow-4: #8cffce;
+$rainbow-5: #bd8cff;
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  .icon-example-item {
+    width: 16.66%;
+    height: 120px;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 24px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    span {
+      font-size: 16px;
+    }
+    &:nth-child(5n):hover {
+      background: $rainbow-1;
+      font-size: 36px;
+    }
+    &:nth-child(5n +  1):hover {
+      background: $rainbow-2;
+      font-size: 36px;
+    }
+    &:nth-child(5n +  2):hover {
+      background: $rainbow-3;
+      font-size: 36px;
+    }
+    &:nth-child(5n +  3):hover {
+      background: $rainbow-4;
+      font-size: 36px;
+    }
+    &:nth-child(5n +  4):hover {
+      background: $rainbow-5;
+      font-size: 36px;
+    }
+  }
+}

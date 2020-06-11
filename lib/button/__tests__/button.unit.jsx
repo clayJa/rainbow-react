@@ -16,7 +16,7 @@ describe('button', () => {
     })
     it('props mode',() => {
         const component = mount(<Button mode={`danger`}/>)
-        expect(component.find('button').hasClass('mous-button-danger')).toEqual(true)
+        expect(component.find('button').hasClass('rainbow-button-danger')).toEqual(true)
     })
     it('props loading',() => {
         const component = mount(<Button loading={`danger`}/>)

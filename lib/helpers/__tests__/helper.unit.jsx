@@ -24,24 +24,24 @@ describe('classes', () => {
 })
 describe('scopedClassMaker', () => {
   it('scopedClassMaker 接受参数 prefix 返回一个函数 ',() => {
-    const fn = scopedClassMaker('mous-test');
+    const fn = scopedClassMaker('rainbow-test');
     expect(fn).toBeInstanceOf(Function)
   })
   it('scopedClassMaker 接受参数 prefix 返回的函数接受无参数 ',() => {
-    const fn = scopedClassMaker('mous-test');
-    expect(fn()).toEqual('mous-test')
+    const fn = scopedClassMaker('rainbow-test');
+    expect(fn()).toEqual('rainbow-test')
   })
   it('scopedClassMaker 接受参数 prefix 返回的函数接受一个 string 类型参数 ',() => {
-    const fn = scopedClassMaker('mous-test');
-    expect(fn('text')).toEqual('mous-test-text')
+    const fn = scopedClassMaker('rainbow-test');
+    expect(fn('text')).toEqual('rainbow-test-text')
   })
   it('scopedClassMaker 接受参数 prefix 返回的函数接受一个 object 类型参数',() => {
-    const fn = scopedClassMaker('mous-test');
-    expect(fn({y: true, z: false})).toEqual('mous-test-y')
-    expect(fn({y: true, z: true})).toEqual('mous-test-y mous-test-z')
+    const fn = scopedClassMaker('rainbow-test');
+    expect(fn({y: true, z: false})).toEqual('rainbow-test-y')
+    expect(fn({y: true, z: true})).toEqual('rainbow-test-y rainbow-test-z')
   })
   it('scopedClassMaker 接受参数 prefix 返回的函数接受一个自定义 Options 类型参数添加额外的 class',() => {
-    const fn = scopedClassMaker('mous-test');
-    expect(fn({y: true, z: true}, {extra: 'red'})).toEqual('mous-test-y mous-test-z red')
+    const fn = scopedClassMaker('rainbow-test');
+    expect(fn({y: true, z: true}, {extra: 'red'})).toEqual('rainbow-test-y rainbow-test-z red')
   })
 })

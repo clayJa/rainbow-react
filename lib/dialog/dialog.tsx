@@ -12,7 +12,7 @@ interface DialogProps extends React.HTMLAttributes<HTMLElement> {
   closeOnClickMask?: boolean;
 }
 
-const scopedClass = scopedClassMaker('mous-dialog');
+const scopedClass = scopedClassMaker('rainbow-dialog');
 const Dialog: React.FunctionComponent<DialogProps> = ({visible, children, onClose, buttons, closeOnClickMask}) => {
   const onClickClose: React.MouseEventHandler = (e) => {
     onClose(e);
