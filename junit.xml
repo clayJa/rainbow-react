@@ -1,35 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="12" failures="0" time="3.709">
-  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2019-06-04T08:38:25" time="2.732" tests="4">
-    <testcase classname="button render successfully" name="button render successfully" time="0.015">
+<testsuites name="jest tests" tests="25" failures="0" time="1.946">
+  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2020-06-11T05:56:55" time="0.881" tests="4">
+    <testcase classname="button render successfully" name="button render successfully" time="0.009">
     </testcase>
-    <testcase classname="button onClick" name="button onClick" time="0.03">
+    <testcase classname="button onClick" name="button onClick" time="0.024">
     </testcase>
-    <testcase classname="button props mode" name="button props mode" time="0.004">
+    <testcase classname="button props mode" name="button props mode" time="0.002">
     </testcase>
-    <testcase classname="button props loading" name="button props loading" time="0.003">
+    <testcase classname="button props loading" name="button props loading" time="0.005">
     </testcase>
   </testsuite>
-  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2019-06-04T08:38:28" time="0.12" tests="5">
-    <testcase classname="classes classes 接受一个className" name="classes classes 接受一个className" time="0">
+  <testsuite name="dialog" errors="0" failures="0" skipped="0" timestamp="2020-06-11T05:56:56" time="0.162" tests="8">
+    <testcase classname="dialog render successfully" name="dialog render successfully" time="0.012">
     </testcase>
-    <testcase classname="classes classes 接受两个className" name="classes classes 接受两个className" time="0.001">
+    <testcase classname="dialog onClose" name="dialog onClose" time="0.002">
+    </testcase>
+    <testcase classname="dialog closeOnClickMask" name="dialog closeOnClickMask" time="0.003">
+    </testcase>
+    <testcase classname="dialog closeOnClickMask" name="dialog closeOnClickMask" time="0.003">
+    </testcase>
+    <testcase classname="dialog modal" name="dialog modal" time="0.01">
+    </testcase>
+    <testcase classname="dialog confirm ok" name="dialog confirm ok" time="0.005">
+    </testcase>
+    <testcase classname="dialog confirm cancel" name="dialog confirm cancel" time="0.003">
+    </testcase>
+    <testcase classname="dialog alert" name="dialog alert" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2020-06-11T05:56:56" time="0.089" tests="10">
+    <testcase classname="classes classes 接受一个className" name="classes classes 接受一个className" time="0.001">
+    </testcase>
+    <testcase classname="classes classes 接受两个className" name="classes classes 接受两个className" time="0">
     </testcase>
     <testcase classname="classes classes 接受 undefined " name="classes classes 接受 undefined " time="0">
     </testcase>
-    <testcase classname="classes classes 接受各种奇怪参数 " name="classes classes 接受各种奇怪参数 " time="0">
+    <testcase classname="classes classes 接受各种奇怪参数 " name="classes classes 接受各种奇怪参数 " time="0.001">
     </testcase>
     <testcase classname="classes classes 不接受参数 " name="classes classes 不接受参数 " time="0">
     </testcase>
+    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回一个函数 " name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回一个函数 " time="0">
+    </testcase>
+    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受无参数 " name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受无参数 " time="0">
+    </testcase>
+    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个 string 类型参数 " name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个 string 类型参数 " time="0">
+    </testcase>
+    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个 object 类型参数" name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个 object 类型参数" time="0.001">
+    </testcase>
+    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个自定义 Options 类型参数添加额外的 class" name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个自定义 Options 类型参数添加额外的 class" time="0">
+    </testcase>
   </testsuite>
-  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2019-06-04T08:38:28" time="0.113" tests="2">
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2020-06-11T05:56:56" time="0.098" tests="2">
     <testcase classname="icon render successfully" name="icon render successfully" time="0.001">
     </testcase>
-    <testcase classname="icon onClick" name="icon onClick" time="0.01">
+    <testcase classname="icon onClick" name="icon onClick" time="0.008">
     </testcase>
   </testsuite>
-  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2019-06-04T08:38:28" time="0.1" tests="1">
-    <testcase classname="我的第一个测试用例 1 + 3 = 3" name="我的第一个测试用例 1 + 3 = 3" time="0.001">
+  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2020-06-11T05:56:57" time="0.072" tests="1">
+    <testcase classname="我的第一个测试用例 1 + 3 = 3" name="我的第一个测试用例 1 + 3 = 3" time="0">
     </testcase>
   </testsuite>
 </testsuites>
