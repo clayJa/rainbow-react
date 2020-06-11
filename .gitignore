@@ -61,6 +61,7 @@ typings/
 .next
 # idea
 .idea
+.DS_Store
 */.DS_Store
 # build
 /dist/*
