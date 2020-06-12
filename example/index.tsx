@@ -5,6 +5,7 @@ import {HashRouter as Router, Route, NavLink} from 'react-router-dom';
 
 import ButtonExample from '../lib/button/button.example';
 import DialogExample from '../lib/dialog/dialog.example';
+import PagerExample from '../lib/pager/pager.example';
 import Layout, {Aside, Content, Footer, Header} from '../lib/layout/layout';
 import LayoutExample from '../lib/layout/layout.example';
 import './index.scss'
@@ -27,10 +28,16 @@ ReactDOM.render(
               <NavLink to="/icon">Icon</NavLink>
             </li>
             <li>
-              <NavLink to="/dialog">对话框</NavLink>
+              <NavLink to="/button">Button</NavLink>
             </li>
             <li>
-              <NavLink to="/layout">布局</NavLink>
+              <NavLink to="/dialog">Dialog</NavLink>
+            </li>
+            <li>
+              <NavLink to="/layout">Layout</NavLink>
+            </li>
+            <li>
+              <NavLink to="/pager">Pager</NavLink>
             </li>
           </ul>
         </Aside>
@@ -39,6 +46,7 @@ ReactDOM.render(
           <Route path="/button" component={ButtonExample}/>
           <Route path="/dialog" component={DialogExample}/>
           <Route path="/layout" component={LayoutExample}/>
+          <Route path="/pager" component={PagerExample}/>
         </Content>
       </Layout>
       <Footer className="site-footer">

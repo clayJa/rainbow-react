@@ -1,0 +1,36 @@
+$margin-right: 8px;
+$main-color: #bd8cff;
+$default-color: rgba(0,0,0,0.65);
+.rainbow-pager {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  &-page-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    min-width: 32px;
+    height: 32px;
+    margin-right: $margin-right;
+    color: $default-color;
+    &.disabled {
+      color: rgba(0,0,0,.25);
+      border-color: #d9d9d9;
+      cursor: not-allowed;
+      fill: rgba(0,0,0,.25);
+    }
+  }
+  &-ellipsis {
+    margin-right: $margin-right;
+    color: rgba(0,0,0,.25);
+  }
+  &-current-page {
+    border-color: $main-color;
+    color: $main-color;
+  }
+}
