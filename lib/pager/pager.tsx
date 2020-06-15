@@ -5,7 +5,7 @@ import './pager.scss';
 interface PagerProps extends React.HTMLAttributes<HTMLElement> {
   total: number;
   current: number;
-  onPageChange: React.EventHandler<any>,
+  onPageChange: (page: number) => void,
   hideIfOnePage?: boolean;
 }
 
@@ -42,8 +42,8 @@ const Pager: React.FunctionComponent<PagerProps> = ({total, current,onPageChange
     setPages(computedPages);
   },[current,total])
   return (
-    <div className={'rainbow-pager'}>
-      <Icon name={ 'left'} className={`${current === 1 ? 'disabled' : ''} rainbow-pager-page-item`}
+    <div className={`${hideIfOnePage ? 'hide' : ''} rainbow-pager`}>
+      <Icon name={ 'left'} className={`${current === 1 ? 'disabled' : ''} rainbow-pager-page-item rainbow-pager-page-prev`}
             onClick={() => current !== 1 && onPageChange(current - 1)}
       />
       {
@@ -55,13 +55,13 @@ const Pager: React.FunctionComponent<PagerProps> = ({total, current,onPageChange
              <span className={'rainbow-pager-page-item'} key={page} onClick={() => onPageChange(page)}>{page}</span>
         })
       }
-      <Icon name={ 'right'} className={`${current === total ? 'disabled' : ''} rainbow-pager-page-item`}
+      <Icon name={ 'right'} className={`${current === total ? 'disabled' : ''} rainbow-pager-page-item rainbow-pager-page-next`}
             onClick={() => current !== total && onPageChange(current + 1)}
       />
     </div>
   );
 };
 Pager.defaultProps = {
-  hideIfOnePage: true,
+  hideIfOnePage: false,
 };
 export default Pager;

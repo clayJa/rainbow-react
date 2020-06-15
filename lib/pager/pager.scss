@@ -5,6 +5,9 @@ $default-color: rgba(0,0,0,0.65);
   display: inline-flex;
   align-items: center;
   font-size: 14px;
+  &.hide {
+    display: none;
+  }
   &-page-item {
     display: inline-flex;
     align-items: center;
