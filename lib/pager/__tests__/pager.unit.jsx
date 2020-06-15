@@ -25,7 +25,7 @@ describe('pager', () => {
       onPageChange,
     }
     const component = mount(<Pager {...props} />)
-    component.find('.rainbow-pager-page-prev').simulate('click')
+    component.find('.rainbow-pager-page-prev').hostNodes().simulate('click')
     expect(onPageChange).not.toBeCalled()
     clearDom()
   })
@@ -37,7 +37,7 @@ describe('pager', () => {
       onPageChange,
     }
     const component = mount(<Pager {...props} />)
-    component.find('.rainbow-pager-page-next').simulate('click')
+    component.find('.rainbow-pager-page-next').hostNodes().simulate('click')
     expect(onPageChange).not.toBeCalled()
     clearDom()
   })
@@ -49,7 +49,7 @@ describe('pager', () => {
       onPageChange,
     }
     const component = mount(<Pager {...props} />)
-    component.find('.rainbow-pager-current-page').toHaveLength(1)
+    expect(component.find('.rainbow-pager-current-page')).toHaveLength(1)
     clearDom()
   })
 })
