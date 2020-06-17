@@ -3,12 +3,12 @@ import React, {useState} from 'react';
 
 
 const PagerExample: React.FunctionComponent = () => {
-  const [ current, setCurrent ] = useState(1);
+  const [ current, setCurrent ] = useState(5);
   const handlePageChange = (page : number) => {
     setCurrent(page);
   }
   return (
-    <Pager current={current} total={5} onPageChange={handlePageChange} />
+    <Pager current={current} total={10} onPageChange={handlePageChange} />
   );
 };
 export default PagerExample;

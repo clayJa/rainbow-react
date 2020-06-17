@@ -41,7 +41,7 @@ describe('dialog', () => {
     expect(onClose).toBeCalled()
     clearDom()
   })
-  it('closeOnClickMask', () => {
+  it('buttons', () => {
     const onClose = jest.fn()
     const props = {
       visible: true,
