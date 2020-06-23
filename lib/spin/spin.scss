@@ -1,0 +1,30 @@
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rainbow-spin {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #bd8cff;
+  &-text {
+    margin-top: 4px;
+    color: inherit;
+    font-size: 14px;
+  }
+  &-large .loading{
+    font-size: 32px;
+  }
+  &-small .loading{
+    font-size: 12px;
+  }
+}
+.loading {
+  animation: loading 2s infinite linear;
+  fill: #bd8cff;
+}

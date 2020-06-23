@@ -1,79 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="32" failures="0" time="2.215">
-  <testsuite name="pager" errors="0" failures="0" skipped="0" timestamp="2020-06-17T07:06:43" time="1.217" tests="7">
-    <testcase classname="pager render successfully" name="pager render successfully" time="0.032">
+<testsuites name="jest tests" tests="10" failures="0" time="3.025">
+  <testsuite name="pager" errors="0" failures="0" skipped="0" timestamp="2020-06-23T09:54:29" time="1.34" tests="7">
+    <testcase classname="pager render successfully" name="pager render successfully" time="0.035">
     </testcase>
     <testcase classname="pager disable prev button" name="pager disable prev button" time="0.007">
     </testcase>
-    <testcase classname="pager disable next button" name="pager disable next button" time="0.004">
+    <testcase classname="pager disable next button" name="pager disable next button" time="0.006">
     </testcase>
-    <testcase classname="pager current props" name="pager current props" time="0.004">
+    <testcase classname="pager current props" name="pager current props" time="0.003">
     </testcase>
-    <testcase classname="pager onPageChange event trigger by click item" name="pager onPageChange event trigger by click item" time="0.003">
+    <testcase classname="pager onPageChange event trigger by click item" name="pager onPageChange event trigger by click item" time="0.005">
     </testcase>
     <testcase classname="pager page  ellipsis" name="pager page  ellipsis" time="0.004">
     </testcase>
     <testcase classname="pager hideIfOnePage props" name="pager hideIfOnePage props" time="0.003">
     </testcase>
   </testsuite>
-  <testsuite name="dialog" errors="0" failures="0" skipped="0" timestamp="2020-06-17T07:06:45" time="0.15" tests="8">
-    <testcase classname="dialog render successfully" name="dialog render successfully" time="0.011">
+  <testsuite name="spin" errors="0" failures="0" skipped="0" timestamp="2020-06-23T09:54:30" time="0.693" tests="3">
+    <testcase classname="spin render successfully" name="spin render successfully" time="0.011">
     </testcase>
-    <testcase classname="dialog onClose" name="dialog onClose" time="0.003">
+    <testcase classname="spin spin tip prop" name="spin spin tip prop" time="0.003">
     </testcase>
-    <testcase classname="dialog closeOnClickMask" name="dialog closeOnClickMask" time="0.002">
-    </testcase>
-    <testcase classname="dialog closeOnClickMask" name="dialog closeOnClickMask" time="0.003">
-    </testcase>
-    <testcase classname="dialog modal" name="dialog modal" time="0.01">
-    </testcase>
-    <testcase classname="dialog confirm ok" name="dialog confirm ok" time="0.006">
-    </testcase>
-    <testcase classname="dialog confirm cancel" name="dialog confirm cancel" time="0.002">
-    </testcase>
-    <testcase classname="dialog alert" name="dialog alert" time="0.003">
-    </testcase>
-  </testsuite>
-  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2020-06-17T07:06:45" time="0.103" tests="4">
-    <testcase classname="button render successfully" name="button render successfully" time="0.007">
-    </testcase>
-    <testcase classname="button onClick" name="button onClick" time="0.008">
-    </testcase>
-    <testcase classname="button props mode" name="button props mode" time="0.001">
-    </testcase>
-    <testcase classname="button props loading" name="button props loading" time="0.002">
-    </testcase>
-  </testsuite>
-  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2020-06-17T07:06:45" time="0.091" tests="2">
-    <testcase classname="icon render successfully" name="icon render successfully" time="0.001">
-    </testcase>
-    <testcase classname="icon onClick" name="icon onClick" time="0.008">
-    </testcase>
-  </testsuite>
-  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2020-06-17T07:06:45" time="0.08" tests="10">
-    <testcase classname="classes classes 接受一个className" name="classes classes 接受一个className" time="0.001">
-    </testcase>
-    <testcase classname="classes classes 接受两个className" name="classes classes 接受两个className" time="0">
-    </testcase>
-    <testcase classname="classes classes 接受 undefined " name="classes classes 接受 undefined " time="0">
-    </testcase>
-    <testcase classname="classes classes 接受各种奇怪参数 " name="classes classes 接受各种奇怪参数 " time="0">
-    </testcase>
-    <testcase classname="classes classes 不接受参数 " name="classes classes 不接受参数 " time="0">
-    </testcase>
-    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回一个函数 " name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回一个函数 " time="0.001">
-    </testcase>
-    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受无参数 " name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受无参数 " time="0">
-    </testcase>
-    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个 string 类型参数 " name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个 string 类型参数 " time="0">
-    </testcase>
-    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个 object 类型参数" name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个 object 类型参数" time="0">
-    </testcase>
-    <testcase classname="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个自定义 Options 类型参数添加额外的 class" name="scopedClassMaker scopedClassMaker 接受参数 prefix 返回的函数接受一个自定义 Options 类型参数添加额外的 class" time="0.001">
-    </testcase>
-  </testsuite>
-  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2020-06-17T07:06:45" time="0.066" tests="1">
-    <testcase classname="我的第一个测试用例 1 + 3 = 3" name="我的第一个测试用例 1 + 3 = 3" time="0">
+    <testcase classname="spin spin  size props" name="spin spin  size props" time="0.002">
     </testcase>
   </testsuite>
 </testsuites>

@@ -10,6 +10,7 @@ import Layout, {Aside, Content, Footer, Header} from '../lib/layout/layout';
 import LayoutExample from '../lib/layout/layout.example';
 import './index.scss'
 import IconDemo from '../lib/icon/icon.demo';
+import SpinExample from '../lib/spin/spin.example';
 const logo = require('./logo.png');
 
 ReactDOM.render(
@@ -39,6 +40,9 @@ ReactDOM.render(
             <li>
               <NavLink to="/pager">Pager</NavLink>
             </li>
+            <li>
+              <NavLink to="/spin">Spin</NavLink>
+            </li>
           </ul>
         </Aside>
         <Content className="site-main">
@@ -47,6 +51,7 @@ ReactDOM.render(
           <Route path="/dialog" component={DialogExample}/>
           <Route path="/layout" component={LayoutExample}/>
           <Route path="/pager" component={PagerExample}/>
+          <Route path="/spin" component={SpinExample}/>
         </Content>
       </Layout>
       <Footer className="site-footer">
